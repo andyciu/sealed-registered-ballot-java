@@ -1,5 +1,7 @@
 # SecretBallotRSA
-密封式記名投票輔助工具 Version 0.1 
+密封式記名投票輔助工具 Version 0.1
+
+
 **本輔助程式(SecretBallotRSA)要搭配社群網站具記名式投票功能使用**
 
 主要流程：創立->投票->開票
