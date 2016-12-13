@@ -1,0 +1,370 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_ballot_f"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="andyciu.secretballotrsa.BallotFActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/ballotF_ttCode1"
+        android:layout_alignLeft="@+id/ballotF_buttonCode"
+        android:layout_alignStart="@+id/ballotF_buttonCode"
+        android:id="@+id/ballotF_ttCode2"
+        android:textColor="?android:attr/colorActivatedHighlight"
+        android:textStyle="normal|bold"
+        android:textSize="20sp" />
+
+    <TextView
+        android:text="@string/ballot_ttCode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/ballotF_ttCode1"
+        android:textSize="14sp"
+        android:layout_above="@+id/ballotF_ttW1"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="12dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/ballotF_ttW1"
+        android:textSize="16sp"
+        android:text="@string/ballot_ttCodeW"
+        android:layout_above="@+id/billing_buttonFinish"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="15dp"
+        android:textColor="@android:color/holo_red_light"
+        android:textStyle="normal|bold" />
+
+    <Button
+        android:text="@string/app_buttonFinish"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/billing_buttonFinish"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:id="@+id/ballotF_etPublic1"
+        android:hint="@string/BallotTexts1"
+        android:layout_alignBaseline="@+id/ballotF_ttPublic1"
+        android:layout_alignBottom="@+id/ballotF_ttPublic1"
+        android:layout_toRightOf="@+id/ballotF_ttPublic1"
+        android:layout_toEndOf="@+id/ballotF_ttPublic1" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:id="@+id/ballotF_etPublic2"
+        android:hint="@string/BallotTexts2"
+        android:layout_alignBaseline="@+id/ballotF_ttPublic2"
+        android:layout_alignBottom="@+id/ballotF_ttPublic2"
+        android:layout_toRightOf="@+id/ballotF_ttPublic2"
+        android:layout_toEndOf="@+id/ballotF_ttPublic2" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/ballotF_ttW2"
+        android:textSize="16sp"
+        android:text="@string/ballot_ttCodeW2"
+        android:textColor="@android:color/black"
+        android:layout_marginTop="24dp"
+        android:layout_below="@+id/ballotF_buttonCode"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:text="@string/ballot_button1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/ballotF_buttonCode"
+        android:textSize="20sp"
+        android:layout_below="@+id/ballotF_etPublic2"
+        android:layout_toRightOf="@+id/ballotF_ttCode1"
+        android:layout_toEndOf="@+id/ballotF_ttCode1" />
+
+    <TextView
+        android:text="@string/BallotText1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/ballotF_ttPublic1"
+        android:textSize="20sp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="13dp" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="11dp"
+        android:layout_above="@+id/ballotF_ttCode2"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_height="match_parent"
+            android:layout_width="170sp">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:text="A:"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/ballotF_ttVoteA1"
+                    android:layout_weight="1"
+                    android:textSize="20sp"
+                    android:textAlignment="center"
+                    android:layout_width="19sp" />
+
+                <TextView
+                    android:text="1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/ballotF_ttVoteA2"
+                    android:layout_weight="1"
+                    android:textSize="20sp"
+                    android:textAlignment="textStart"
+                    android:textColor="@android:color/holo_red_dark" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:text="A:"
+                    android:layout_width="19sp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/ballotF_ttVoteB1"
+                    android:layout_weight="1"
+                    android:textSize="20sp"
+                    android:textAlignment="center" />
+
+                <TextView
+                    android:text="1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/ballotF_ttVoteB2"
+                    android:layout_weight="1"
+                    android:textSize="20sp"
+                    android:textAlignment="textStart"
+                    android:textColor="@android:color/holo_red_dark" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:text="A:"
+                    android:layout_width="19sp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/ballotF_ttVoteC1"
+                    android:layout_weight="1"
+                    android:textSize="20sp"
+                    android:textAlignment="center" />
+
+                <TextView
+                    android:text="1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/ballotF_ttVoteC2"
+                    android:layout_weight="1"
+                    android:textSize="20sp"
+                    android:textAlignment="textStart"
+                    android:textColor="@android:color/holo_red_dark" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:text="A:"
+                    android:layout_width="19sp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/ballotF_ttVoteD1"
+                    android:layout_weight="1"
+                    android:textSize="20sp"
+                    android:textAlignment="center" />
+
+                <TextView
+                    android:text="1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/ballotF_ttVoteD2"
+                    android:layout_weight="1"
+                    android:textSize="20sp"
+                    android:textAlignment="textStart"
+                    android:textColor="@android:color/holo_red_dark" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:text="A:"
+                    android:layout_width="19sp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/ballotF_ttVoteE1"
+                    android:layout_weight="1"
+                    android:textSize="20sp"
+                    android:textAlignment="center" />
+
+                <TextView
+                    android:text="1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/ballotF_ttVoteE2"
+                    android:layout_weight="1"
+                    android:textSize="20sp"
+                    android:textAlignment="textStart"
+                    android:textColor="@android:color/holo_red_dark" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_height="match_parent"
+            android:layout_width="170sp">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:text="A:"
+                    android:layout_width="19sp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/ballotF_ttVoteF1"
+                    android:layout_weight="1"
+                    android:textSize="20sp"
+                    android:textAlignment="center" />
+
+                <TextView
+                    android:text="1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/ballotF_ttVoteF2"
+                    android:layout_weight="1"
+                    android:textSize="20sp"
+                    android:textAlignment="textStart"
+                    android:textColor="@android:color/holo_red_dark" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:text="A:"
+                    android:layout_width="19sp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/ballotF_ttVoteG1"
+                    android:layout_weight="1"
+                    android:textSize="20sp"
+                    android:textAlignment="center" />
+
+                <TextView
+                    android:text="1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/ballotF_ttVoteG2"
+                    android:layout_weight="1"
+                    android:textSize="20sp"
+                    android:textAlignment="textStart"
+                    android:textColor="@android:color/holo_red_dark" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:text="A:"
+                    android:layout_width="19sp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/ballotF_ttVoteH1"
+                    android:layout_weight="1"
+                    android:textSize="20sp"
+                    android:textAlignment="center" />
+
+                <TextView
+                    android:text="1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/ballotF_ttVoteH2"
+                    android:layout_weight="1"
+                    android:textSize="20sp"
+                    android:textAlignment="textStart"
+                    android:textColor="@android:color/holo_red_dark" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:text="A:"
+                    android:layout_width="19sp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/ballotF_ttVoteI1"
+                    android:layout_weight="1"
+                    android:textSize="20sp"
+                    android:textAlignment="center" />
+
+                <TextView
+                    android:text="1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/ballotF_ttVoteI2"
+                    android:layout_weight="1"
+                    android:textSize="20sp"
+                    android:textAlignment="textStart"
+                    android:textColor="@android:color/holo_red_dark" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:text="@string/BallotText2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/ballotF_ttPublic2"
+        android:textSize="20sp"
+        android:layout_below="@+id/ballotF_etPublic1"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+</RelativeLayout>

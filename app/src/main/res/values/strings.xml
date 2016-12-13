@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">SecretBallotRSA</string>
+    <string name="app_personInfo">2016 By AndyCiu.</string>
+    <string name="main_button1">創建投票碼</string>
+    <string name="main_button2">投票</string>
+    <string name="main_button3">開票</string>
+    <string name="create_button1">創建</string>
+    <string name="BallotText1">投票公開碼：</string>
+    <string name="BallotText2">投票種子碼：</string>
+    <string name="BallotText3">投票解密碼：</string>
+    <string name="BallotText4">投票個人識別碼：</string>
+    <string name="create_textW1">創立投票：請將「投票公開碼」及「投票種子碼」公告在社群之投票內容上，並請將「投票解密碼」妥善保存，以做未來開票之用。</string>
+    <string name="BallotTexts1">公開碼</string>
+    <string name="BallotTexts2">種子碼</string>
+    <string name="BallotTexts3">解密碼</string>
+    <string name="BallotTexts4">個人識別碼</string>
+    <string name="ballot_button1">產生識別碼</string>
+    <string name="ballot_ttCode">您的投票識別碼：</string>
+    <string name="ballot_ttCodeW">請記住並妥善保管，並只有在開票之時才提供給開票人員，以進行識別之歸屬作業。</string>
+    <string name="ballot_ttCodeW2">請依照下列對應之數字進行投票：</string>
+    <string name="billing_button1">開票剖析</string>
+    <string name="billing_ttCodeW1">請依照下列對應之字母進行開票計數作業：</string>
+    <string name="billing_ttCodeW2">開票作業：請取得每位投票人之個人識別碼，並與投票種子碼、解密碼輸入後，對清單上相對應之字母進行開票之計數。</string>
+    <string name="app_buttonFinish">返回</string>
+</resources>

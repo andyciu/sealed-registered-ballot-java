@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_create_rsa"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="andyciu.secretballotrsa.CreateRSA_Activity">
+
+    <Button
+        android:text="@string/create_button1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="64dp"
+        android:id="@+id/create_button1"
+        android:textSize="20sp" />
+
+    <TextView
+        android:text="@string/BallotText1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="42dp"
+        android:id="@+id/textView"
+        android:textSize="20sp"
+        android:layout_below="@+id/create_button1"
+        android:layout_toLeftOf="@+id/create_button1"
+        android:layout_toStartOf="@+id/create_button1" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/create_textRSAprivate"
+        android:textSize="20sp"
+        android:layout_alignBaseline="@+id/create_textView2"
+        android:layout_alignBottom="@+id/create_textView2"
+        android:layout_toRightOf="@+id/create_textView2"
+        android:layout_toEndOf="@+id/create_textView2"
+        android:textColor="@android:color/holo_red_dark"
+        android:textStyle="normal|bold" />
+
+    <Button
+        android:text="@string/app_buttonFinish"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_toRightOf="@+id/create_textView2"
+        android:layout_toEndOf="@+id/create_textView2"
+        android:id="@+id/create_buttonFinish" />
+
+    <TextView
+        android:text="@string/BallotText2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:id="@+id/create_textView1"
+        android:textSize="20sp"
+        android:layout_below="@+id/textView"
+        android:layout_alignLeft="@+id/textView"
+        android:layout_alignStart="@+id/textView" />
+
+    <TextView
+        android:text="@string/BallotText3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/create_textView2"
+        android:textSize="20sp"
+        android:layout_centerVertical="true"
+        android:layout_alignLeft="@+id/create_textView1"
+        android:layout_alignStart="@+id/create_textView1"
+        android:textColor="@android:color/holo_red_light" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/create_textRSApublic"
+        android:textSize="20sp"
+        android:layout_alignBaseline="@+id/textView"
+        android:layout_alignBottom="@+id/textView"
+        android:layout_toRightOf="@+id/textView"
+        android:layout_toEndOf="@+id/textView"
+        android:textColor="@android:color/black" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/create_textRSAseed"
+        android:textSize="20sp"
+        android:layout_alignBaseline="@+id/create_textView1"
+        android:layout_alignBottom="@+id/create_textView1"
+        android:layout_toRightOf="@+id/create_textView1"
+        android:layout_toEndOf="@+id/create_textView1"
+        android:textColor="@android:color/black" />
+
+    <TextView
+        android:text="@string/create_textW1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/create_textView2"
+        android:layout_alignLeft="@+id/create_textView2"
+        android:layout_alignStart="@+id/create_textView2"
+        android:layout_marginTop="39dp"
+        android:id="@+id/textView3"
+        android:textColor="@android:color/black"
+        android:textSize="20sp"
+        android:textAllCaps="false"
+        android:textStyle="normal|italic" />
+</RelativeLayout>
